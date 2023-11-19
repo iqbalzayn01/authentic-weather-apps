@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <header>
-      <h1>Authentic Weather</h1>
+      <h1 className="title">Authentic Weather</h1>
     </header>
   );
 };
