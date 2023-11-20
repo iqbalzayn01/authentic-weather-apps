@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: none;
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -18,104 +13,11 @@ body {
   background-color: #0AB88A;
 }
 
-header .title {
-  color: #F2FFE9;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  height: 80px;
-  background: #F2FFE9;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: height 1s ease-in-out;
-}
-
-.container.weather-info-open {
+.weather-info-open {
   height: 310px;
 }
 
-#weatherForm .inputLocation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  padding: 24px 20px;
-  z-index: 2;
-}
-
-#weatherForm .inputLocation input {
-  color: #272829;
-  width: 80%;
-  font-size: 24px;
-  font-weight: 500;
-  text-transform: uppercase;
-  background: transparent;
-}
-
-#weatherForm .inputLocation input::placeholder {
-  color: #D8D9DA;
-}
-
-#weatherForm .inputLocation button {
-  cursor: pointer;
-}
-
-.weather-info {
-  position: absolute;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  padding: 24px 20px;
-  width: 100%;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.weather-info.fade-in {
+.fade-in {
   opacity: 1;
   transform: translateY(0);
-}
-
-.weather {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  color: #272829;
-}
-
-.weather .temp {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.weather .weather-desc {
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-
-.weather .location {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.weather .weather-detail {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.weather .weather-detail p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
