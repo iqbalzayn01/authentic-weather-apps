@@ -1,11 +1,13 @@
 import { Header } from "./components/Header";
-import { WeatherInfo } from "./components/WeatherInfo";
+import { WeatherSearch } from "./components/WeatherSearch";
+import { CurrentWeather } from "./components/CurrentWeather";
 
 export default function App() {
   return (
     <>
       <Header />
-      <WeatherInfo />
+      <CurrentWeather />
+      <WeatherSearch />
     </>
   );
 }

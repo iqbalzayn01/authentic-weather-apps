@@ -9,7 +9,7 @@ import {
   faWind,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const WeatherInfo = () => {
+export const WeatherSearch = () => {
   const [city, setCity] = useState("");
   const [cityName, setCityName] = useState("");
   const [temperature, setTemperature] = useState("");
@@ -49,7 +49,7 @@ export const WeatherInfo = () => {
   };
   return (
     <>
-      <main className="container">
+      <section className="container seacrh">
         <form
           id="weather-container"
           className="weather-form"
@@ -94,7 +94,7 @@ export const WeatherInfo = () => {
             <FontAwesomeIcon icon={faCloudSun} size="6x" />
           </section>
         )}
-      </main>
+      </section>
     </>
   );
 };

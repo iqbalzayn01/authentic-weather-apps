@@ -18,21 +18,24 @@ body {
   background-color: #242424;
 }
 
+.container {
+  background-color: white;
+  border-radius: 12px;
+}
+
 header .title {
   color: white;
   text-align: center;
   margin-bottom: 40px;
 }
 
-#weather-container {
-  text-align: center;
+/* Current Weather */
+.current-weather {
+  padding: 24px 20px;
+  margin-bottom: 59px;
 }
 
-.container {
-  background-color: white;
-  border-radius: 12px;
-}
-
+/* Weather Form */
 .weather-form {
   text-align: center;
 }
